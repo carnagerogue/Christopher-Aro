@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Flipster CSS -->
+<link rel="stylesheet" href="dist/jquery.flipster.min.css">
+
+<!-- Flipster Js -->
+<script src="dist/jquery.flipster.min.js"></script>
 
 <head>
   <meta charset="utf-8">
@@ -103,6 +111,15 @@
 
           <h2 class="sub-title">Certifications</h2>
           <div class="grid image-grid">
+            <script src="https://raw.githubusercontent.com/carnagerogue/Christopher-Aro/master/script.js"></script>
+
+            <div id="myCarousel">
+              <ul class="flip-items">
+               {% for item in certification_images %}
+               <li><a href="{{item.link}}"><img src="{{item.image}}" /></a></li>
+                {% endfor %}
+               </ul>
+             </div>
 
             <div class="grid-block">
               <div class="tile">
