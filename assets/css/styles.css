@@ -4914,28 +4914,14 @@ h4 {
 .hv-degrees .hv-record-head { margin-bottom: 0.2rem; }
 .hv-degree-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.6rem;
 }
-.hv-degree-mark {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.hv-degree-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
   flex-shrink: 0;
-  margin-top: 0.18rem;
-}
-.hv-degree-mark-done {
-  background: var(--teal);
-  color: #fff;
-  box-shadow: 0 0 0 3px rgba(0, 153, 184, 0.18);
-}
-.hv-degree-mark-active {
-  background: #fff;
-  border: 2px solid var(--navy);
-  box-shadow: 0 0 0 3px rgba(16, 46, 80, 0.18);
 }
 .hv-degree-title {
   font-size: 0.86rem;
@@ -5168,6 +5154,24 @@ h4 {
 .edu-card-primary {
   border-color: var(--teal);
   box-shadow: 0 8px 24px -10px rgba(0, 153, 184, 0.35);
+}
+.edu-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 0.35rem;
+}
+.edu-logo-fallback {
+  background: var(--grad-navy);
+  color: var(--teal-soft);
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.12);
 }
 .edu-school {
   font-size: 0.82rem;
